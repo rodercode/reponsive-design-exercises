@@ -1,11 +1,11 @@
-## Responsive Design
+# Responsive Design
 
-# What I have learned
-- Create responsive navbar
+## What I have learned
+- Create a responsive navbar
 
-# How to run this application
+## How to run this application
 
-# Tools been used
-* Html, Css and Typescript
+## Tools been used
+* HTML, CSS and Typescript
 * Tailwind, Vue 3
 * npm, vite

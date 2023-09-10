@@ -1,5 +1,5 @@
 <template>
-  <header class="flex justify-between py-6">
+  <header class="flex justify-between py-4">
     <HomeLink />
     <nav class="hidden">
       <ul>

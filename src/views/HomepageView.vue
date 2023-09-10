@@ -1,6 +1,6 @@
 <template>
   <!-- FLEX CONTAINER -->
-  <div class="flex flex-col px-4">
+  <div class="px-4">
     <HeaderMain />
     <SectionHero />
   </div>

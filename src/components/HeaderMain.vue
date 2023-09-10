@@ -1,7 +1,13 @@
 <template>
   <header class="relative flex justify-between mb-12">
     <HomeLink />
-    <nav class="text-xl mobile-nav-close">
+    <nav
+      class="text-xl"
+      :class="{
+        'mobile-nav-open': isNavOpen,
+        'mobile-nav-close': true,
+      }"
+    >
       <ul class="flex flex-col gap-4">
         <NavLink class="text-white" name="Home" />
         <NavLink name="About" />
@@ -27,6 +33,14 @@ export default defineComponent({
     HomeLink,
     NavLink,
     BtnMenu,
+  },
+  data() {
+    return {
+      isNavOpen: false,
+    };
+  },
+  methods: {
+    changeNavState() {},
   },
 });
 </script>
@@ -55,6 +69,4 @@ export default defineComponent({
   pointer-events: auto;
   opacity: 1;
 }
-
-
 </style>

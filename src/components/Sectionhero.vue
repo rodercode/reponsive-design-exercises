@@ -1,22 +1,24 @@
 <template>
-  <main>
+  
+  <!-- GRID CONTAINER -->
+  <main class="gap-10">
     <!-- TEXT BOX -->
     <div>
       <!-- HEADLINE -->
       <h1 class="mb-4 leading-snug">Collaborate Like Never Before</h1>
 
       <!-- TEXT BODY -->
-      <p class="mb-8">
+      <p class="mb-10">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam omnis
         animi, excepturi quod illo sunt!
       </p>
-    </div>
 
-    <BaseLinkButton name="Get Started" href="#" />
+      <BaseLinkButton name="Get Started" href="#" />
+    </div>
 
     <!-- IMG box -->
     <div>
-      <img class="mt-12" src="../assets/img/data-x1.png" alt="" />
+      <img src="../assets/img/data-x1.png" alt="" />
     </div>
   </main>
 </template>
@@ -36,3 +38,12 @@ export default defineComponent({
   },
 });
 </script>
+
+<style lang="scss" scoped>
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  align-items: center;
+  justify-content: center;
+}
+</style>

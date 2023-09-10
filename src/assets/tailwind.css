@@ -3,6 +3,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* GENERAL STYLE */
 @layer base {
   h1 {
     @apply text-4xl;
@@ -16,4 +17,29 @@
   h4 {
     @apply text-xl;
   }
+}
+
+/* CUSTOM CSS CLASSES */
+.custom-mobile-nav-close {
+  background-color: #868e96;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 125%;
+  padding: 2.4rem 0rem;
+
+  pointer-events: none;
+  transition: all 0.5s ease-in;
+  z-index: 100;
+  opacity: 0;
+
+  box-shadow: 0 0 0 100vmax #228be6;
+  clip-path: inset(0 -100vmax);
+  background: #228be6;
+}
+
+.custom-mobile-nav-open {
+  visibility: visible;
+  pointer-events: auto;
+  opacity: 1;
 }

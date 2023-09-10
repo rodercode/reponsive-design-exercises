@@ -2,10 +2,9 @@
   <header class="relative flex justify-between mb-12">
     <HomeLink />
     <nav
-      class="text-xl"
+      class="text-xl custom-mobile-nav-close"
       :class="{
-        'mobile-nav-open': isNavOpen,
-        'mobile-nav-close': true,
+        'custom-mobile-nav-open': isNavOpen,
       }"
     >
       <ul class="flex flex-col gap-4">
@@ -16,7 +15,7 @@
       </ul>
     </nav>
 
-    <BtnMenu @toggleMenu="changeNavState"  />
+    <BtnMenu @toggleMenu="changeNavState" />
   </header>
 </template>
 
@@ -42,33 +41,16 @@ export default defineComponent({
   methods: {
     changeNavState() {
       this.isNavOpen = !this.isNavOpen;
+      this.disableScroll();
+    },
+    disableScroll() {
+      const body = document.querySelector("body") as HTMLElement;
+      if (this.isNavOpen) {
+        body.classList.add("overflow-hidden");
+      } else {
+        body.classList.remove("overflow-hidden");
+      }
     },
   },
 });
 </script>
-
-<style lang="scss" scoped>
-.mobile-nav-close {
-  background-color: #868e96;
-  width: 100%;
-  height: 100vh;
-  position: absolute;
-  top: 125%;
-  padding: 2.4rem 0rem;
-
-  pointer-events: none;
-  transition: all 0.5s ease-in;
-  z-index: 100;
-  opacity: 0;
-
-  box-shadow: 0 0 0 100vmax #228be6;
-  clip-path: inset(0 -100vmax);
-  background: #228be6;
-}
-
-.mobile-nav-open {
-  visibility: visible;
-  pointer-events: auto;
-  opacity: 1;
-}
-</style>

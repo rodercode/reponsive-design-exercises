@@ -1,6 +1,6 @@
 <template>
   <!-- FLEX CONTAINER -->
-  <div class="p-4">
+  <div class="p-4" :class="{ 'disable-scroll': isNavOpen}">
     <HeaderMain />
     <SectionHero />
     <FooterContact />
@@ -26,3 +26,10 @@ export default defineComponent({
   },
 });
 </script>
+
+<style lang="scss" scoped>
+.disable-scroll {
+  height: 100vh;
+  overflow-y: hidden;
+}
+</style>

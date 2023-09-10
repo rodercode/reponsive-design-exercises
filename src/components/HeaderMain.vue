@@ -16,7 +16,7 @@
       </ul>
     </nav>
 
-    <BtnMenu />
+    <BtnMenu @toggleMenu="changeNavState"  />
   </header>
 </template>
 
@@ -40,7 +40,9 @@ export default defineComponent({
     };
   },
   methods: {
-    changeNavState() {},
+    changeNavState() {
+      this.isNavOpen = !this.isNavOpen;
+    },
   },
 });
 </script>

@@ -1,6 +1,6 @@
 <template>
-  <!-- GRID CONTAINER -->
-  <div class="grid px-4">
+  <!-- FLEX CONTAINER -->
+  <div class="flex flex-col px-4">
     <HeaderMain />
     <SectionHero />
   </div>
@@ -12,7 +12,6 @@ import { defineComponent } from "vue";
 // Import COMPONENTS
 import HeaderMain from "../components/HeaderMain.vue";
 import SectionHero from "../components/SectionHero.vue";
-
 
 export default defineComponent({
   components: {

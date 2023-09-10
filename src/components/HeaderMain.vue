@@ -1,7 +1,7 @@
 <template>
   <header class="flex justify-between py-6">
     <HomeLink />
-    <nav>
+    <nav class="hidden">
       <ul>
         <NavLink name="Home" />
         <NavLink name="About" />

@@ -1,5 +1,5 @@
 <template>
-  <header class="flex justify-between mb-8 relative">
+  <header class="relative flex justify-between mb-12">
     <HomeLink />
     <nav class="text-xl mobile-nav-close">
       <ul class="flex flex-col gap-4">

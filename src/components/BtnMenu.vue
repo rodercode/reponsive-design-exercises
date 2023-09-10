@@ -1,7 +1,7 @@
 <template>
   <button @click="toggleMenu">
     <IconMenu class="w-8 h-8" />
-    <IconClose class="w-8 h-8 hidden" />
+    <IconClose class="hidden w-8 h-8" />
   </button>
 </template>
 
@@ -22,7 +22,7 @@ export default defineComponent({
   },
   methods: {
     toggleMenu() {
-      console.log("toggle menu");
+      console.log("button was toggled");
     },
   },
 });

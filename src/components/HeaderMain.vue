@@ -1,9 +1,9 @@
 <template>
-  <header class="flex justify-between mb-8">
+  <header class="flex justify-between mb-8 relative">
     <HomeLink />
-    <nav class="hidden">
-      <ul>
-        <NavLink name="Home" />
+    <nav class="text-xl mobile-nav-close">
+      <ul class="flex flex-col gap-4">
+        <NavLink class="text-white" name="Home" />
         <NavLink name="About" />
         <NavLink name="Services" />
         <NavLink name="Contact" />
@@ -30,3 +30,31 @@ export default defineComponent({
   },
 });
 </script>
+
+<style lang="scss" scoped>
+.mobile-nav-close {
+  background-color: #868e96;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 125%;
+  padding: 2.4rem 0rem;
+
+  pointer-events: none;
+  transition: all 0.5s ease-in;
+  z-index: 100;
+  opacity: 0;
+
+  box-shadow: 0 0 0 100vmax #228be6;
+  clip-path: inset(0 -100vmax);
+  background: #228be6;
+}
+
+.mobile-nav-open {
+  visibility: visible;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+
+</style>

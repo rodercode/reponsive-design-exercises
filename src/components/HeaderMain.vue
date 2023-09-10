@@ -9,7 +9,7 @@
 import { defineComponent } from "vue";
 
 // IMPORT COMPONENTS
-import HomeLink from "./main-header/HomeLink.vue";
+import HomeLink from "./header-main/HomeLink.vue";
 import BaseLinkButton from "./base/BaseLinkButton.vue";
 import BtnMenu from "./BtnMenu.vue";
 

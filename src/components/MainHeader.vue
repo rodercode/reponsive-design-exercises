@@ -1,7 +1,7 @@
 <template>
   <header class="flex justify-between">
+    <HomeLink />
     <IconMenu class="w-8 h-8" />
-    <BaseLinkButton name="Get Started" />
   </header>
 </template>
 
@@ -12,10 +12,12 @@ import { defineComponent } from "vue";
 import IconMenu from "~icons/heroicons/bars-3";
 
 // IMPORT COMPONENTS
+import HomeLink from "./main-header/HomeLink.vue";
 import BaseLinkButton from "./base/BaseLinkButton.vue";
 
 export default defineComponent({
   components: {
+    HomeLink,
     BaseLinkButton,
     IconMenu,
   },

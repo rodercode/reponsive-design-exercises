@@ -2,7 +2,7 @@
   <!-- BUTTON LINK -->
   <a
     class="px-8 py-2 text-base font-bold text-white border-2 rounded-3xl border-primary-color bg-primary-color inline-box"
-    href="#"
+    :href="href"
     >{{ name }}</a
   >
 </template>
@@ -14,7 +14,9 @@ export default defineComponent({
   props: {
     name: {
       type: String,
-      required: true,
+    },
+    href: {
+      type: String,
     },
   },
 });

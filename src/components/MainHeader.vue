@@ -1,5 +1,5 @@
 <template>
-  <header class="flex justify-between">
+  <header class="flex justify-between py-6">
     <HomeLink />
     <IconMenu class="w-8 h-8" />
   </header>

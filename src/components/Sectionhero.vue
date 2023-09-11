@@ -1,11 +1,11 @@
 <template>
   
   <!-- GRID CONTAINER -->
-  <main class="gap-10">
+  <main class="gap-10 lg:gap-40">
     <!-- TEXT BOX -->
     <div>
       <!-- HEADLINE -->
-      <h1 class="mb-4 leading-snug">Collaborate Like Never Before</h1>
+      <h1 class="mb-4 leading-snug text-gray-shade-color font-semibold">Collaborate Like Never Before</h1>
 
       <!-- TEXT BODY -->
       <p class="mb-10">
@@ -18,7 +18,7 @@
 
     <!-- IMG box -->
     <div>
-      <img src="../assets/img/data-x1.png" alt="" />
+      <img class="h-full" src="../assets/img/data-x1.png" alt="" />
     </div>
   </main>
 </template>

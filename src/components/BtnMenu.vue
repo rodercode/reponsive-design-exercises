@@ -1,5 +1,5 @@
 <template>
-  <button @click="$emit('toggleMenu')">
+  <button class="lg:hidden" @click="$emit('toggleMenu')">
     <IconMenu class="w-8 h-8" />
     <IconClose class="hidden w-8 h-8" />
   </button>

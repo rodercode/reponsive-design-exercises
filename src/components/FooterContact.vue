@@ -1,9 +1,9 @@
 <template>
-  <footer class="flex">
-    <IconInstagram class="text-primary-color" />
-    <IconTwitter class="text-primary-color" />
-    <IconYoutube class="text-primary-color" />
-    <span>The Nghiem</span>
+  <footer class="flex gap-2 mt-4 text-gray-tint-color">
+    <IconInstagram />
+    <IconTwitter />
+    <IconYoutube />
+    <span class="text-sm">The Nghiem</span>
   </footer>
 </template>
 

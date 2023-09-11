@@ -1,9 +1,11 @@
 <template>
   <!-- FLEX CONTAINER -->
-  <div class="p-4" :class="{ 'disable-scroll': isNavOpen}">
+  <div class="p-4 md:px-12 md:py-8">
     <HeaderMain />
-    <SectionHero />
-    <FooterContact />
+    <div class="max-w-lg m-auto md:max-w-5xl">
+      <SectionHero />
+      <FooterContact />
+    </div>
   </div>
 </template>
 

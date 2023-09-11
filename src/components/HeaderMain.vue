@@ -1,5 +1,5 @@
 <template>
-  <header class="relative flex justify-between mb-12">
+  <header class="relative flex justify-between m-auto mb-12 md:mb-32 max-w-7xl">
     <HomeLink />
     <nav
       class="text-xl custom-mobile-nav-close"
@@ -7,8 +7,8 @@
         'custom-mobile-nav-open': isNavOpen,
       }"
     >
-      <ul class="flex flex-col gap-4">
-        <NavLink class="text-white" name="Home" />
+      <ul class="flex flex-col gap-4 lg:flex-row lg:text-base">
+        <NavLink name="Home" />
         <NavLink name="About" />
         <NavLink name="Services" />
         <NavLink name="Contact" />
